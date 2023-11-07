@@ -77,7 +77,7 @@ const Form = () => {
                     <input type="number" name="" id="" placeholder="mm"
                         style={{
                             padding: "0.6rem",
-                            margin: "0.6rem",
+                            margin: "0.6rem 0",
                             width: "5rem",
                             height: "2.8125rem",
                             flexShrink: "0",
@@ -117,7 +117,7 @@ const Form = () => {
                         style={{
                             padding: "0.6rem",
                             margin: "0.6rem 0",
-                            width: "11.9375rem",
+                            width: "8rem",
                             height: "2.8125rem",
                             flexShrink: "0",
                             borderRadius: "0.5rem",
@@ -130,7 +130,7 @@ const Form = () => {
 
             <button
                 style={{
-                    width: "23.8125rem",
+                    // width: "23.8125rem",
                     height: "3.3125rem",
                     flexShrink: "0",
                     borderRadius: "0.5rem",
@@ -142,7 +142,7 @@ const Form = () => {
                     fontStyle: "normal",
                     fontWeight: "500",
                     lineHeight: "normal",
-                }}> Confirm </button>
+                }}>Confirm</button>
 
 
         </div >
