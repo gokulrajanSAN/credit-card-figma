@@ -2,6 +2,8 @@
 import './App.css';
 import CcFront from './components/CcFront';
 import CcBack from './components/CcBack';
+import Form from './components/Form';
+
 function App() {
   return (
     <div className="App">
@@ -52,16 +54,24 @@ function App() {
           position: "absolute"
         }}></div>
       </div>
+
       <div style={{
         left: "10.25rem",
         top: "11.69rem",
         position: "absolute"
       }}> <CcFront />  </div>
+
       <div style={{
         top: "29rem",
         left: "16rem",
         position: "absolute"
-      }}> <CcBack/> </div>
+      }}> <CcBack /> </div>
+
+      <div style={{
+        top: "17rem",
+        left: "52rem",
+        position: "absolute"
+      }}> <Form /> </div>
 
     </div >
   );
