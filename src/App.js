@@ -1,10 +1,22 @@
-
 import './App.css';
 import CcFront from './components/CcFront';
 import CcBack from './components/CcBack';
 import Form from './components/Form';
+import { useState } from 'react';
 
 function App() {
+
+  const initialValue = { hname: "qwer", atmnumber: "", atmmonth: "", atmyear: "", cvv: "" }
+
+  const [formValue, setFormvalue] = useState(initialValue);
+
+  const handleChange = (e) => {
+    e.preventDefault();
+    const { name, value } = e.target;
+    setFormvalue({ ...formValue, [name]: value });
+    console.log(formValue);
+  }
+
   return (
     <div className="App">
       <div className='Group-10' style={{
@@ -59,19 +71,21 @@ function App() {
         left: "10.25rem",
         top: "11.69rem",
         position: "absolute"
-      }}> <CcFront />  </div>
+      }}> <CcFront formValue={formValue} />  </div>
 
       <div style={{
         top: "29rem",
         left: "16rem",
         position: "absolute"
-      }}> <CcBack /> </div>
+      }}> <CcBack formValue={formValue} /> </div>
 
       <div style={{
         top: "17rem",
         left: "52rem",
         position: "absolute"
-      }}> <Form /> </div>
+      }}> <Form formValue={formValue}
+        handleChange={handleChange}
+        /> </div>
 
     </div >
   );

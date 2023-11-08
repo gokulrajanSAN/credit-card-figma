@@ -62,51 +62,55 @@ const CcFront = () => {
                     <path d="M83.5 23.5C83.5 29.0647 78.9932 33.575 73.4348 33.575C67.8764 33.575 63.3696 29.0647 63.3696 23.5C63.3696 17.9353 67.8764 13.425 73.4348 13.425C78.9932 13.425 83.5 17.9353 83.5 23.5Z" stroke="white" />
                 </svg>
             </div>
-            <div className="card-nunber" style={{
-                position: "absolute",
-                color: "var(--White, #FFF)",
-                fontFeatureSettings: "'clig' off, 'liga' off",
-                fontFamily: "Space Grotesk",
-                fontSize: "1.75rem",
-                fontStyle: "normal",
-                fontWeight: "500",
-                lineHeight: "normal",
-                letterSpacing: "0.21388rem",
-                top: "8.7rem",
-                left: "2rem"
-            }}>0000 0000 0000 0000</div>
-            <div className="holder-nane" style={{
-                position: "absolute",
-                color: "var(--White, #FFF)",
-                fontFeatureSettings: "'clig' off, 'liga' off",
-                /* Body (L) */
-                fontFamily: "Space Grotesk",
-                fontSize: "0.875rem",
-                fontStyle: "normal",
-                fontWeight: "500",
-                lineHeight: "normal",
-                letterSpacing: "0.125rem",
-                textTransform: "uppercase",
-                top: "13rem",
-                left: "2rem"
-            }}>JANE APPLESEED</div>
-            <div className="date" style={{
-                position: "absolute",
-                color: "var(--White, #FFF)",
-                textAlign: "right",
-                fontFeatureSettings: "'clig' off, 'liga' off",
-                
-                /* Body (L) */
-                fontFamily: "Space Grotesk",
-                fontSize: "0.875rem",
-                fontStyle: "normal",
-                fontWeight: "500",
-                lineHeight: "normal",
-                letterSpacing: "0.125rem",
-                textTransform: "uppercase",
-                top: "13rem",
-                left: "23rem"
-            }}>00/00</div>
+            <div className="card-nunber"
+                // value={formValue.atmnumber}
+                style={{
+                    position: "absolute",
+                    color: "var(--White, #FFF)",
+                    fontFeatureSettings: "'clig' off, 'liga' off",
+                    fontFamily: "Space Grotesk",
+                    fontSize: "1.75rem",
+                    fontStyle: "normal",
+                    fontWeight: "500",
+                    lineHeight: "normal",
+                    letterSpacing: "0.21388rem",
+                    top: "8.7rem",
+                    left: "2rem"
+                }}>0000 0000 0000 0000</div>
+            <div className="holder-nane"
+                // value={formValue.hname}
+                style={{
+                    position: "absolute",
+                    color: "var(--White, #FFF)",
+                    fontFeatureSettings: "'clig' off, 'liga' off",
+                    /* Body (L) */
+                    fontFamily: "Space Grotesk",
+                    fontSize: "0.875rem",
+                    fontStyle: "normal",
+                    fontWeight: "500",
+                    lineHeight: "normal",
+                    letterSpacing: "0.125rem",
+                    textTransform: "uppercase",
+                    top: "13rem",
+                    left: "2rem"
+                }}>JANE APPLESEED</div>
+            <div className="date"
+                // value={formValue.atmyear}
+                style={{
+                    position: "absolute",
+                    color: "var(--White, #FFF)",
+                    textAlign: "right",
+                    fontFeatureSettings: "'clig' off, 'liga' off",
+                    fontFamily: "Space Grotesk",
+                    fontSize: "0.875rem",
+                    fontStyle: "normal",
+                    fontWeight: "500",
+                    lineHeight: "normal",
+                    letterSpacing: "0.125rem",
+                    textTransform: "uppercase",
+                    top: "13rem",
+                    left: "23rem"
+                }}>00/00</div>
         </div>
     );
 }

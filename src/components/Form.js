@@ -1,11 +1,14 @@
-const Form = () => {
+
+const Form = ({ formValue, handleChange }) => {
+
     return (
-        <div className="for"
+        <form className="for"
             style={{
                 display: "flex", flexDirection: "column", gap: "1.6rem"
             }}>
+            <pre>{JSON.stringify(formValue, undefined, 2)}</pre>
             <div>
-                <div className="G17-2" style={{
+                <div style={{
                     color: "var(--Deep-Violet, #21092F)",
                     fontFeatureSettings: "'clig' off, 'liga' off",
                     fontFamily: "Space Grotesk",
@@ -18,7 +21,10 @@ const Form = () => {
                 }}>Cardholder Name</div>
 
                 <input type="text" name="" id=""
-                    placeholder="e.g. Jane Appleseed" style={{
+                    onChange={handleChange}
+                    value={formValue.hname}
+                    placeholder="e.g. Jane Appleseed"
+                    style={{
                         padding: "0.6rem",
                         margin: "0.6rem 0",
                         width: "23.8125rem",
@@ -30,20 +36,21 @@ const Form = () => {
             </div>
 
             <div>
-                <div className="G17-2coby"
-                    style={{
-                        color: "var(--Deep-Violet, #21092F)",
-                        fontFeatureSettings: "'clig' off, 'liga' off",
-                        fontFamily: "Space Grotesk",
-                        fontSize: "0.75rem",
-                        fontStyle: "normal",
-                        fontWeight: "500",
-                        lineHeight: "normal",
-                        letterSpacing: "0.125rem",
-                        textTransform: "uppercase",
-                    }}>Card Number</div>
+                <div style={{
+                    color: "var(--Deep-Violet, #21092F)",
+                    fontFeatureSettings: "'clig' off, 'liga' off",
+                    fontFamily: "Space Grotesk",
+                    fontSize: "0.75rem",
+                    fontStyle: "normal",
+                    fontWeight: "500",
+                    lineHeight: "normal",
+                    letterSpacing: "0.125rem",
+                    textTransform: "uppercase",
+                }}>Card Number</div>
 
-                <input type="text" name="" id=""
+                <input type="number" name="" id=""
+                    onChange={handleChange}
+                    value={formValue.atmnumber}
                     placeholder="e.g. 1234 5678 9123 0000"
                     style={{
                         padding: "0.6rem",
@@ -74,7 +81,10 @@ const Form = () => {
                         textTransform: "uppercase",
                     }}>Exp. Date (MM/YY)</div>
 
-                    <input type="number" name="" id="" placeholder="mm"
+                    <input type="number" name="" id=""
+                        onChange={handleChange}
+                        placeholder="mm"
+                        value={formValue.atmmonth}
                         style={{
                             padding: "0.6rem",
                             margin: "0.6rem 0",
@@ -86,7 +96,10 @@ const Form = () => {
                             background: "var(--White, #FFF)",
                         }} />
 
-                    <input type="number" name="" id="" placeholder="yy"
+                    <input type="number" name="" id=""
+                        onChange={handleChange}
+                        value={formValue.atmyear}
+                        placeholder="yy"
                         style={{
                             padding: "0.6rem",
                             margin: "0.6rem",
@@ -113,6 +126,8 @@ const Form = () => {
                     }}>CVV</div>
 
                     <input type="number" name="" id=""
+                        onChange={handleChange}
+                        value={formValue.cvv}
                         placeholder="e.g.124"
                         style={{
                             padding: "0.6rem",
@@ -145,7 +160,7 @@ const Form = () => {
                 }}>Confirm</button>
 
 
-        </div >
+        </form >
     );
 }
 

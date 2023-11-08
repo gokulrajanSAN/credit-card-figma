@@ -1,4 +1,3 @@
-
 const CcBack = () => {
     return (
         <div className="ccBack" style={{
@@ -29,22 +28,24 @@ const CcBack = () => {
                 left: "2.7rem"
             }} />
 
-            <div style={{
-                position: "absolute",
-                color: "var(--White, #FFF)",
-                textAlign: "right",
-                fontFeatureSettings: "'clig' off, 'liga' off",
-                /* Body (L) */
-                fontFamily: "Space Grotesk",
-                fontSize: "0.875rem",
-                fontStyle: "normal",
-                fontWeight: "500",
-                lineHeight: "normal",
-                letterSpacing: "0.125rem",
-                textTransform: "uppercase",
-                top: "6.94rem",
-                left: "22.4rem"
-            }}>000</div>
+            <div
+                // value={formValue.cvv}
+                style={{
+                    position: "absolute",
+                    color: "var(--White, #FFF)",
+                    textAlign: "right",
+                    fontFeatureSettings: "'clig' off, 'liga' off",
+                    /* Body (L) */
+                    fontFamily: "Space Grotesk",
+                    fontSize: "0.875rem",
+                    fontStyle: "normal",
+                    fontWeight: "500",
+                    lineHeight: "normal",
+                    letterSpacing: "0.125rem",
+                    textTransform: "uppercase",
+                    top: "6.94rem",
+                    left: "22.4rem"
+                }}>000</div>
             <div className="" style={{
                 position: "absolute",
                 width: "11.625rem",
