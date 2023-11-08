@@ -1,0 +1,14 @@
+.for-inbut {
+    padding: 0.6rem;
+    margin: 0.6rem 0;
+    width: 23.8125rem;
+    height: 2.8125rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--Light-Grey, #DFDEE0);
+    background: var(--White, #FFF)
+}
+
+.for-inbut:focus {
+    outline: none;
+    border: 1px solid var(--Gradient, #6348FE);
+}

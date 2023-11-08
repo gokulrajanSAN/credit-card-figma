@@ -6,15 +6,14 @@ import { useState } from 'react';
 
 function App() {
 
-  const initialValue = { hname: "qwer", atmnumber: "", atmmonth: "", atmyear: "", cvv: "" }
-
+  const initialValue = { hname: "", atmnumber: "", atmmonth: "", atmyear: "", cvv: "" }
   const [formValue, setFormvalue] = useState(initialValue);
 
   const handleChange = (e) => {
     e.preventDefault();
     const { name, value } = e.target;
     setFormvalue({ ...formValue, [name]: value });
-    console.log(formValue);
+    console.log("ans:", { ...formValue, [name]: value });
   }
 
   return (
@@ -83,8 +82,9 @@ function App() {
         top: "17rem",
         left: "52rem",
         position: "absolute"
-      }}> <Form formValue={formValue}
-        handleChange={handleChange}
+      }}> <Form
+          formValue={formValue}
+          handleChange={handleChange}
         /> </div>
 
     </div >

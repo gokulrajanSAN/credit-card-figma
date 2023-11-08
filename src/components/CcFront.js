@@ -1,5 +1,5 @@
 
-const CcFront = () => {
+const CcFront = ({ formValue }) => {
     return (
         <div className="cc-front" style={{
             position: "relative",
@@ -76,14 +76,14 @@ const CcFront = () => {
                     letterSpacing: "0.21388rem",
                     top: "8.7rem",
                     left: "2rem"
-                }}>0000 0000 0000 0000</div>
+                }}>{formValue.atmnumber||"0000 0000 0000 0000"}</div>
             <div className="holder-nane"
-                // value={formValue.hname}
+                value={formValue.hname}
                 style={{
                     position: "absolute",
                     color: "var(--White, #FFF)",
                     fontFeatureSettings: "'clig' off, 'liga' off",
-                    /* Body (L) */
+                   
                     fontFamily: "Space Grotesk",
                     fontSize: "0.875rem",
                     fontStyle: "normal",

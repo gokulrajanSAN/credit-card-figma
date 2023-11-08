@@ -1,5 +1,6 @@
+import './For.css'
+const Form = ({ formValue, handleChange }) => {   
 
-const Form = ({ formValue, handleChange }) => {
 
     return (
         <form className="for"
@@ -20,19 +21,11 @@ const Form = ({ formValue, handleChange }) => {
                     textTransform: "uppercase",
                 }}>Cardholder Name</div>
 
-                <input type="text" name="" id=""
+                <input type="text" name="hname" id="" className='for-inbut'
                     onChange={handleChange}
                     value={formValue.hname}
                     placeholder="e.g. Jane Appleseed"
-                    style={{
-                        padding: "0.6rem",
-                        margin: "0.6rem 0",
-                        width: "23.8125rem",
-                        height: "2.8125rem",
-                        borderRadius: "0.5rem",
-                        border: "1px solid var(--Light-Grey, #DFDEE0)",
-                        background: "var(--White, #FFF)"
-                    }} />
+                     />
             </div>
 
             <div>
@@ -48,9 +41,9 @@ const Form = ({ formValue, handleChange }) => {
                     textTransform: "uppercase",
                 }}>Card Number</div>
 
-                <input type="number" name="" id=""
+                <input type="number" name="atmnumber" id=""
                     onChange={handleChange}
-                    value={formValue.atmnumber}
+                    // value={formValue.atmnumber}
                     placeholder="e.g. 1234 5678 9123 0000"
                     style={{
                         padding: "0.6rem",
@@ -81,10 +74,10 @@ const Form = ({ formValue, handleChange }) => {
                         textTransform: "uppercase",
                     }}>Exp. Date (MM/YY)</div>
 
-                    <input type="number" name="" id=""
+                    <input type="number" name="atmmonth" id=""
                         onChange={handleChange}
                         placeholder="mm"
-                        value={formValue.atmmonth}
+                        // value={formValue.atmmonth}
                         style={{
                             padding: "0.6rem",
                             margin: "0.6rem 0",
@@ -96,9 +89,9 @@ const Form = ({ formValue, handleChange }) => {
                             background: "var(--White, #FFF)",
                         }} />
 
-                    <input type="number" name="" id=""
+                    <input type="number" name="atmyear" id=""
                         onChange={handleChange}
-                        value={formValue.atmyear}
+                        // value={formValue.atmyear}
                         placeholder="yy"
                         style={{
                             padding: "0.6rem",
@@ -125,9 +118,9 @@ const Form = ({ formValue, handleChange }) => {
                         textTransform: "uppercase",
                     }}>CVV</div>
 
-                    <input type="number" name="" id=""
+                    <input type="number" name="cvv" id=""
                         onChange={handleChange}
-                        value={formValue.cvv}
+                        // value={formValue.cvv}
                         placeholder="e.g.124"
                         style={{
                             padding: "0.6rem",
