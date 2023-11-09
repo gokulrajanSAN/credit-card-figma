@@ -1,4 +1,4 @@
-input:valid {
+/* input:valid {
     outline: none;
     border: 1px solid var(--Gradient, #6348FE);
 }
@@ -6,7 +6,7 @@ input:valid {
 input:invalid {
     outline: none;
     border: 1px solid var(--Gradient, #b60710);
-}
+} */
 
 .errorText {
     color: var(--Red, #FF5050);

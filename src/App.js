@@ -2,6 +2,7 @@ import './App.css';
 import CcFront from './components/CcFront';
 import CcBack from './components/CcBack';
 import Form from './components/Form';
+// import Thank from './components/Thank';
 import { useState } from 'react';
 
 function App() {
@@ -45,6 +46,11 @@ function App() {
           handleChange={handleChange}
         /> </div>
 
+      {/* <div style={{
+        // top: "20rem",
+        // left: "52rem",
+        // position: "absolute"
+      }}><Thank /></div> */}
     </div >
   );
 }

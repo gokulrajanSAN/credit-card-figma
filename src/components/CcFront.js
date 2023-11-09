@@ -13,11 +13,11 @@ const CcFront = ({ formValue }) => {
                 </svg>
             </div>
             <div className="card-nunber">
-                {formValue.atmnumber  || "0000 0000 0000 0000"}</div>
+                {formValue.atmnumber || "0000 0000 0000 0000"}</div>
             <div className="holder-nane">
                 {formValue.hname || "JANE APPLESEED"}</div>
             <div className="date">
-                {`${formValue.atmmonth}/${formValue.atmyear}` || "00/00"}</div>
+                {`${formValue.atmmonth}` || "00"} / {`${formValue.atmyear}` || "00"}</div>
         </div>
     );
 }

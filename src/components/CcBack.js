@@ -1,4 +1,4 @@
-const CcBack = () => {
+const CcBack = ({ formValue }) => {
     return (
         <div className="ccBack" style={{
             position: "relative",
@@ -45,7 +45,7 @@ const CcBack = () => {
                     textTransform: "uppercase",
                     top: "6.94rem",
                     left: "22.4rem"
-                }}>000</div>
+                }}>{formValue.cvv || "000"}</div>
             <div className="" style={{
                 position: "absolute",
                 width: "11.625rem",

@@ -1,17 +1,23 @@
+.thanku{
+    /* position: relative; */
+}
 .round {
-    /* top: 305px;
-    left: 983px; */
-    width: 5rem;
+    position: absolute;
+    top: 19rem;
+    left: 61.5rem;
+    /* width: 5rem;
     height: 5rem;
     flex-shrink: 0;
     border-radius: 5rem;
-    background: var(--Gradient, linear-gradient(164deg, #6348FE 4.74%, #610595 88.83%));
+    background: var(--Gradient, linear-gradient(164deg, #6348FE 4.74%, #610595 88.83%)); */
 }
 
 .thank {
-    width: 381px;
-    height: 36px;
+    position: absolute;
+    top: 26.25rem;
+    left: 52rem;
 
+    height: 2.23rem;
     width: 23.8125rem;
 
     color: var(--Deep-Violet, #21092F);
@@ -28,14 +34,14 @@
 }
 
 .text {
-    width: 263px;
-    height: 23px;
-    top: 52px;
-    left: 59px;
+    position: absolute;
+    top: 29.5rem;
+    left: 55.70rem;
 
-    color: var(--Purplish-Grey, #8F8694);
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
+    /* width: 263px;
+    height: 23px; */
+    /* top: 52px;
+    left: 59px; */
 
     /* Heading (L) */
     font-family: Space Grotesk;
@@ -43,22 +49,29 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+
+    color: var(--Purplish-Grey, #8F8694);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
 }
 
 .btn {
+    position: absolute;
+    top: 34rem;
+    left: 52rem;
+
     width: 23.8125rem;
     height: 3.3125rem;
     flex-shrink: 0;
     border-radius: 0.5rem;
     background: var(--Deep-Violet, #21092F);
+
     color: var(--White, #FFF);
     font-feature-settings: 'clig' off, 'liga' off;
 
     /* Heading (L) */
-    width: 79px;
-    height: 23px;
-    top: 15px;
-    left: 151px;
+    /* width: 79px;
+    height: 23px; */
 
     font-family: Space Grotesk;
     font-size: 1.125rem;

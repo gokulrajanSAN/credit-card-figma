@@ -1,7 +1,7 @@
 import './Thank.css'
 const Thank = () => {
     return (
-        <div>
+        <div className='thanku'>
             <div className="round">
                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
                     <circle cx="40" cy="40" r="40" fill="url(#paint0_linear_0_318)" />
@@ -14,9 +14,9 @@ const Thank = () => {
                     </defs>
                 </svg>
             </div>
-            <div className="thank">THANK YOU!</div>
-            <div className='text'>We’ve added your card details</div>
-            <button className='btn'>Continue</button>
+            <div className="thank" >THANK YOU!</div>
+            <div className='text' >We’ve added your card details</div>
+            <button className='btn' >Continue</button>
         </div>
     );
 }
