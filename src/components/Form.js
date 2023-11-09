@@ -16,7 +16,6 @@ const Form = ({ formValue, handleChange }) => {
                     onChange={handleChange}
                     // value={formValue.hname}
                     placeholder="e.g. Jane Appleseed" />
-                    
             </div>
 
             <div>
@@ -27,6 +26,7 @@ const Form = ({ formValue, handleChange }) => {
                     onChange={handleChange}
                     // value={formValue.atmnumber}
                     placeholder="e.g. 1234 5678 9123 0000" />
+                <div className='errorText' >Wrong format, numbers only</div>
             </div>
 
             <div style={{ display: "flex", flexDirection: "row", gap: "1.6rem" }}>
@@ -45,6 +45,7 @@ const Form = ({ formValue, handleChange }) => {
                         onChange={handleChange}
                         // value={formValue.atmyear}
                         placeholder="yy" />
+                    <div className='errorDate'>Can’t be blank</div>
                 </div>
 
                 <div>
@@ -55,6 +56,7 @@ const Form = ({ formValue, handleChange }) => {
                         value={formValue.cvv}
                         pattern=".{3,4}"
                         placeholder="e.g.124" />
+                        <div className='errorCvv'>Can’t be blank</div>
                 </div>
             </div>
 
