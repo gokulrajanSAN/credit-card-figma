@@ -1,0 +1,104 @@
+.cc-front {
+    position: relative;
+    overflow: hidden;
+    width: 27.9375rem;
+    height: 15.3125rem;
+    border-radius: 0.625rem;
+    background: linear-gradient(164deg, #6348FE 4.74%, #610595 88.83%);
+}
+
+.cc-front2 {
+    background: #D53AFF;
+    position: absolute;
+    width: 8rem;
+    height: 23rem;
+    transform: rotate(45deg);
+    border-radius: 23rem;
+    opacity: 0.8474;
+    filter: blur(40px);
+    top: -7rem;
+    left: 22rem;
+    transform-origin: 0 0
+}
+
+.cc-front4 {
+    background: #FF834A;
+    position: absolute;
+    width: 8rem;
+    height: 23rem;
+    transform: rotate(45deg);
+    border-radius: 23rem;
+    opacity: 0.8474;
+    filter: blur(40px);
+    top: -7.4rem;
+    left: 28rem;
+    transform-origin: 0 0
+}
+
+.cc-front3 {
+    position: absolute;
+    width: 8rem;
+    height: 23rem;
+    transform: rotate(45deg);
+    border-radius: 23rem;
+    opacity: 0.8474;
+    background: #47A2FF;
+    filter: blur(40px);
+    top: 2.4rem;
+    left: 20rem;
+    transform-origin: 0 0
+}
+
+.cc-front-B {
+    position: absolute;
+    width: 5.25rem;
+    height: 2.9375rem;
+    flex-shrink: 0;
+    top: 1.75rem;
+    left: 2rem
+}
+
+.card-nunber {
+    position: absolute;
+    color: var(--White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: -space -grotesk;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.21388rem;
+    top: 8.7rem;
+    left: 2rem
+}
+
+.date {
+    position: absolute;
+    color: var(--White, #FFF);
+    text-align: right;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: -space -grotesk;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    top: 13rem;
+    left: 23rem
+}
+
+.holder-nane {
+    position: absolute;
+    color: var(--White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: -space -grotesk;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    top: 13rem;
+    left: 2rem
+}
