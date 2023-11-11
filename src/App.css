@@ -1,5 +1,12 @@
 @import url("https://fonts.cdnfonts.com/css/space-grotesk");
 
+* {
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+    font-family: Space Grotesk;
+}
+
 .Group-10 {
     width: 30.1875rem;
     height: 56.25rem;   

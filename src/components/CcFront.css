@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+    font-family: Space Grotesk;
+}
+
 .cc-front {
     position: relative;
     overflow: hidden;
@@ -6,7 +13,6 @@
     border-radius: 0.625rem;
     background: linear-gradient(164deg, #6348FE 4.74%, #610595 88.83%);
 
-    
 }
 
 .cc-front2 {
@@ -55,16 +61,16 @@
     position: absolute;
     width: 5.25rem;
     height: 2.9375rem;
-    flex-shrink: 0;
+
     top: 1.75rem;
-    left: 2rem
+    left: 2rem;
 }
 
 .card-nunber {
     position: absolute;
     color: var(--White, #FFF);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: -space -grotesk;
+    font-family: Space Grotesk;
     font-size: 1.75rem;
     font-style: normal;
     font-weight: 500;
@@ -79,7 +85,7 @@
     color: var(--White, #FFF);
     text-align: right;
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: -space -grotesk;
+    font-family: Space Grotesk;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 500;
@@ -94,7 +100,7 @@
     position: absolute;
     color: var(--White, #FFF);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: -space -grotesk;
+    font-family: Space Grotesk;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 500;
