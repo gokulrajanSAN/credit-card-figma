@@ -11,10 +11,19 @@ function App() {
   const [formValue, setFormvalue] = useState(initialValue);
 
   const handleChange = (e) => {
-    e.preventDefault();
     const { name, value } = e.target;
+    // console.log(e.target);
+
+    if (name==="atmnumber") {
+      e.target.value = e.target.value
+      .replace(/\s/g, "")
+      .replace(/(.{4})/g, "$1 ")
+      .trim()
+      .slice(0, 19);
+    }
     setFormvalue({ ...formValue, [name]: value });
     console.log("ans:", { ...formValue, [name]: value });
+    
   }
 
   return (

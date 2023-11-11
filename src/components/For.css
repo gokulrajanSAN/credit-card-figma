@@ -1,38 +1,35 @@
-/* input:valid {
-    outline: none;
-    border: 1px solid var(--Gradient, #6348FE);
+@import url("https://fonts.cdnfonts.com/css/space-grotesk");
+
+* {
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
 }
 
-input:invalid {
+/* input:focus {
     outline: none;
-    border: 1px solid var(--Gradient, #b60710);
+    border: 1px solid var(--Gradient, #0a0c88);
 } */
 
-.errorText {
-    color: var(--Red, #FF5050);
+input::placeholder {
+    color: var(--Deep-Violet, #21092F);
     font-feature-settings: 'clig' off, 'liga' off;
 
-    /* Body (S) */
     font-family: Space Grotesk;
-    font-size: 0.75rem;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+
+    opacity: 0.25;
 }
 
-.errorDate {
-    color: var(--Red, #FF5050);
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Space Grotesk;
-    font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
+.errorText,
+.errorDate,
 .errorCvv {
     color: var(--Red, #FF5050);
     font-feature-settings: 'clig' off, 'liga' off;
+
     font-family: Space Grotesk;
     font-size: 0.75rem;
     font-style: normal;
@@ -41,10 +38,14 @@ input:invalid {
 }
 
 .card-holder,
-.card-number {
+.card-number,
+.Exp-Date,
+.cvv-num {
     color: var(--Deep-Violet, #21092F);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: -space -grotesk;
+
+    /* Body (M) */
+    font-family: Space Grotesk;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 500;
@@ -55,8 +56,7 @@ input:invalid {
 
 .cardholder,
 .atmnumber {
-    padding: 0.6rem;
-    margin: 0.6rem 0;
+    padding-left: 1rem;
     width: 23.8125rem;
     height: 2.8125rem;
     border-radius: 0.5rem;
@@ -64,32 +64,11 @@ input:invalid {
     background: var(--White, #FFF)
 }
 
-.Exp-Date {
-    color: var(--Deep-Violet, #21092F);
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: -space -grotesk;
-    font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.125rem;
-    text-transform: uppercase;
-}
-
-.atmmonth {
-    padding: 0.6rem;
-    margin: 0.6rem 0;
-    width: 5rem;
-    height: 2.8125rem;
-    flex-shrink: 0;
-    border-radius: 0.5rem;
-    border: 1px solid var(--Light-Grey, #DFDEE0);
-    background: var(--White, #FFF);
-}
-
+.atmmonth,
 .atmyear {
-    padding: 0.6rem;
-    margin: 0.6rem;
+    padding-left: 1rem;
+    margin: 0rem 0.6rem 0rem 0rem;
+
     width: 5rem;
     height: 2.8125rem;
     flex-shrink: 0;
@@ -99,21 +78,10 @@ input:invalid {
 }
 
 .cvv {
-    color: var(--Deep-Violet, #21092F);
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: -space -grotesk;
-    font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.125rem;
-    text-transform: uppercase;
-}
+    padding-left: 1rem;
+    margin: 0rem 0rem 0rem 0rem;
 
-.cvv-num {
-    padding: 0.6rem;
-    margin: 0.6rem 0;
-    width: 8rem;
+    width: 11.9375rem;
     height: 2.8125rem;
     flex-shrink: 0;
     border-radius: 0.5rem;
@@ -127,6 +95,7 @@ input:invalid {
     flex-shrink: 0;
     border-radius: 0.5rem;
     background: var(--Deep-Violet, #21092F);
+
     color: var(--White, #FFF);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: -space -grotesk;
@@ -134,4 +103,24 @@ input:invalid {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.56rem;
+    /* margin-bottom: 1.63rem; */
+}
+
+
+.third {
+    display: flex;
+    flex-direction: row;
+    gap: 0.62rem
+}
+
+.errorText,
+.errorCvv,
+.errorDate {
+    display: none;
 }

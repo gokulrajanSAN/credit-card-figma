@@ -53,7 +53,8 @@ const CcBack = ({ formValue }) => {
                 flexShrink: "0",
                 top: "10.75rem",
                 left: "8.25rem"
-            }}><svg xmlns="http://www.w3.org/2000/svg" width="186" height="26" viewBox="0 0 186 26" fill="none">
+            }}><svg xmlns="http://www.w3.org/2000/svg" width="11.625rem"
+                height="1.825rem" viewBox="0 0 186 26" fill="none">
                     <rect width="115" height="4" rx="2" fill="#ADB5BE" />
                     <rect x="121" width="22" height="4" rx="2" fill="#ADB5BE" />
                     <rect x="149" width="22" height="4" rx="2" fill="#ADB5BE" />
