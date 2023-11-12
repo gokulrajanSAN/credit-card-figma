@@ -1,8 +1,9 @@
+@import url("https://fonts.cdnfonts.com/css/space-grotesk");
+
 * {
     box-sizing: border-box;
     margin: 0rem;
     padding: 0rem;
-    font-family: Space Grotesk;
 }
 
 .cc-front {
@@ -12,7 +13,6 @@
     height: 15.3125rem;
     border-radius: 0.625rem;
     background: linear-gradient(164deg, #6348FE 4.74%, #610595 88.83%);
-
 }
 
 .cc-front2 {
