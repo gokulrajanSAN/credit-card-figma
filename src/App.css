@@ -1,64 +1,214 @@
-@import url("https://fonts.cdnfonts.com/css/space-grotesk");
-
-* {
-    box-sizing: border-box;
-    margin: 0rem;
-    padding: 0rem;
-}
-
-body {
-    width: 90rem;
-    height: 56.25rem;
+.App {
+    /* width: 90rem; */
+    /* height: 56.25rem; */
     background: var(--White, #FFF);
     font-family: "Space Grotesk", sans-serif;
-}
-
-.Group-10 {
-    width: 30.1875rem;
-    height: 56.25rem;
     position: relative;
-    background: #21092F;
-    overflow: hidden
 }
 
-.arc2 {
-    width: 15.5rem;
-    height: 41.0625rem;
-    transform: rotate(45deg);
-    border-radius: 41.0625rem;
-    opacity: 0.8474;
-    background: #D53AFF;
-    filter: blur(67.95704650878906px);
-    transform-origin: 0 0;
-    top: -10.2rem;
-    left: 20rem;
-    position: absolute
+
+/* mobile */
+
+@media screen and (min-width:17rem) {
+
+    .Group-10 {
+        width: 30.1875rem;
+        height: 56.25rem;
+
+        position: relative;
+        background: #21092F;
+        overflow: hidden
+    }
+
+    .ccFront {
+        left: 10.25rem;
+        top: 11.69rem;
+        position: absolute;
+    }
+
+    .ccBackPos {
+        position: absolute;
+        top: 29rem;
+        left: 16rem;
+    }
+
+    .cc-front {
+        width: 27.9375rem;
+        height: 15.3125rem;
+    }
+
+    .form {
+        top: 17rem;
+        left: 52rem;
+        position: absolute;
+    }
+
+    .arc2,
+    .arc4,
+    .arc3 {
+        width: 15.5rem;
+        height: 41.0625rem;
+        transform: rotate(45deg);
+        border-radius: 41.0625rem;
+        opacity: 0.8474;
+        filter: blur(4.2rem);
+        transform-origin: 0 0;
+        position: absolute
+    }
+
+    .arc2 {
+        background: #D53AFF;
+        top: -10.2rem;
+        left: 20rem;
+    }
+
+    .arc3 {
+        background: #47A2FF;
+        top: 7.5rem;
+        left: 15.2rem;
+    }
+
+    .arc4 {
+        background: #FF834A;
+        top: -7.25rem;
+        left: 29rem;
+    }
 }
 
-.arc4 {
-    width: 15.5rem;
-    height: 41.0625rem;
-    transform: rotate(45deg);
-    border-radius: 41.0625rem;
-    opacity: 0.8474;
-    background: #FF834A;
-    filter: blur(67.95704650878906px);
-    transform-origin: 0 0;
-    top: -7.25rem;
-    left: 29rem;
-    position: absolute
+
+/* tab */
+
+@media screen and (min-width:44rem) {
+    .Group-10 {
+        width: 3.1875rem;
+        height: 56.25rem;
+
+        position: relative;
+        background: #21092F;
+        overflow: hidden
+    }
+
+    .ccFront {
+        left: 10.25rem;
+        top: 11.69rem;
+        position: absolute;
+    }
+
+    .ccBackPos {
+        position: absolute;
+        top: 29rem;
+        left: 16rem;
+    }
+
+    .cc-front {
+        width: 27.9375rem;
+        height: 15.3125rem;
+    }
+
+    .form {
+        top: 17rem;
+        left: 52rem;
+        position: absolute;
+    }
+
+    .arc2,
+    .arc4,
+    .arc3 {
+        width: 15.5rem;
+        height: 41.0625rem;
+        transform: rotate(45deg);
+        border-radius: 41.0625rem;
+        opacity: 0.8474;
+        filter: blur(4.2rem);
+        transform-origin: 0 0;
+        position: absolute
+    }
+
+    .arc2 {
+        background: #D53AFF;
+        top: -10.2rem;
+        left: 20rem;
+    }
+
+    .arc3 {
+        background: #47A2FF;
+        top: 7.5rem;
+        left: 15.2rem;
+    }
+
+    .arc4 {
+        background: #FF834A;
+        top: -7.25rem;
+        left: 29rem;
+    }
 }
 
-.arc3 {
-    width: 15.5rem;
-    height: 41.0625rem;
-    transform: rotate(45deg);
-    border-radius: 41.0625rem;
-    opacity: 0.8474;
-    background: #47A2FF;
-    filter: blur(67.95704650878906px);
-    transform-origin: 0 0;
-    top: 7.5rem;
-    left: 15.2rem;
-    position: absolute;
+
+/* laptop */
+@media only screen and (min-width:62rem) {
+
+    .Group-10 {
+        width: 30.1875rem;
+        height: 56.25rem;
+
+        position: relative;
+        background: #21092F;
+        overflow: hidden
+    }
+
+    .ccFront {
+        left: 10.25rem;
+        top: 11.69rem;
+        position: absolute;
+    }
+
+    .ccBackPos {
+        position: absolute;
+        top: 29rem;
+        left: 16rem;
+    }
+
+    .cc-front {
+        width: 27.9375rem;
+        height: 15.3125rem;
+    }
+
+    .form {
+        top: 17rem;
+        left: 52rem;
+        position: absolute;
+    }
+
+    .arc2,
+    .arc4,
+    .arc3 {
+        width: 15.5rem;
+        height: 41.0625rem;
+        transform: rotate(45deg);
+        border-radius: 41.0625rem;
+        opacity: 0.8474;
+        filter: blur(4.2rem);
+        transform-origin: 0 0;
+        position: absolute
+    }
+
+    .arc2 {
+        background: #D53AFF;
+        top: -10.2rem;
+        left: 20rem;
+    }
+
+    .arc3 {
+        background: #47A2FF;
+        top: 7.5rem;
+        left: 15.2rem;
+    }
+
+    .arc4 {
+        background: #FF834A;
+        top: -7.25rem;
+        left: 29rem;
+    }
 }
+
+

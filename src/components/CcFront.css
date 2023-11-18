@@ -1,16 +1,9 @@
-@import url("https://fonts.cdnfonts.com/css/space-grotesk");
-
-* {
-    box-sizing: border-box;
-    margin: 0rem;
-    padding: 0rem;
-}
 
 .cc-front {
     position: relative;
     overflow: hidden;
-    width: 27.9375rem;
-    height: 15.3125rem;
+    /* width: 27.9375rem; */
+    /* height: 15.3125rem; */
     border-radius: 0.625rem;
     background: linear-gradient(164deg, #6348FE 4.74%, #610595 88.83%);
 }
@@ -23,7 +16,7 @@
     transform: rotate(45deg);
     border-radius: 23rem;
     opacity: 0.8474;
-    filter: blur(40px);
+    filter: blur(2.4rem);
     top: -7rem;
     left: 22rem;
     transform-origin: 0 0
@@ -37,7 +30,7 @@
     transform: rotate(45deg);
     border-radius: 23rem;
     opacity: 0.8474;
-    filter: blur(40px);
+    filter: blur(2.4rem);
     top: -7.4rem;
     left: 28rem;
     transform-origin: 0 0
@@ -51,7 +44,7 @@
     border-radius: 23rem;
     opacity: 0.8474;
     background: #47A2FF;
-    filter: blur(40px);
+    filter: blur(2.4rem);
     top: 2.4rem;
     left: 20rem;
     transform-origin: 0 0

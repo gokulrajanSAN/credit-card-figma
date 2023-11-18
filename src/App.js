@@ -10,20 +10,19 @@ function App() {
   const initialValue = { hname: "", atmnumber: "", atmmonth: "", atmyear: "", cvv: "" }
   const [formValue, setFormvalue] = useState(initialValue);
 
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     // console.log(e.target);
 
-    if (name==="atmnumber") {
+    if (name === "atmnumber") {
       e.target.value = e.target.value
-      .replace(/\s/g, "")
-      .replace(/(.{4})/g, "$1 ")
-      .trim()
-      .slice(0, 19);
+        .replace(/\s/g, "")
+        .replace(/(.{4})/g, "$1 ")
+        .trim()
+        .slice(0, 19);
     }
     setFormvalue({ ...formValue, [name]: value });
-    console.log("ans:", { ...formValue, [name]: value });
-    
   }
 
   return (
@@ -34,26 +33,19 @@ function App() {
         <div className='arc3' />
       </div>
 
-      <div style={{
-        left: "10.25rem",
-        top: "11.69rem",
-        position: "absolute"
-      }}> <CcFront formValue={formValue} />  </div>
+      <div className='ccFront' >
+        <CcFront formValue={formValue} />
+      </div>
 
-      <div style={{
-        top: "29rem",
-        left: "16rem",
-        position: "absolute"
-      }}> <CcBack formValue={formValue} /> </div>
+      <div className='ccBackPos'>
+        <CcBack formValue={formValue} />
+      </div>
 
-      <div style={{
-        top: "17rem",
-        left: "52rem",
-        position: "absolute"
-      }}> <Form
+      <div className='form' >
+        <Form
           formValue={formValue}
-          handleChange={handleChange}
-        /> </div>
+          handleChange={handleChange} />
+      </div>
 
       {/* <div style={{
         // top: "20rem",
